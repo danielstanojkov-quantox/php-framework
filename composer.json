@@ -1,0 +1,15 @@
+{
+  "name": "daniel/php_framework",
+  "authors": [
+    {
+      "name": "Daniel Stanojkov",
+      "email": "daniel.stanojkov@quantox.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "./"
+    }
+  },
+  "require": {}
+}
