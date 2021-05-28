@@ -1,4 +1,4 @@
-Register
+<h1>Register</h1>
 
 <form action="" method="POST">
     <div class="form-group">

@@ -1,4 +1,4 @@
-Login
+<h1>Login</h1>
 
 <form action="" method="POST">
     <div class="form-group">

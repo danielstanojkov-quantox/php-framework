@@ -15,11 +15,11 @@ class AuthController extends Controller
 
     public function register(Request $request)
     {
-        $this->setLayout('auth');
         if ($request->isPost()) {
             return "Processing data...";
         }
 
+        $this->setLayout('auth');
         return $this->render('register');
     }
 }
