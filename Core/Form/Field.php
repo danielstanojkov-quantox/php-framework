@@ -21,6 +21,12 @@ class Field
         $this->type = self::TYPE_TEXT;
     }
 
+    public function passwordField()
+    {
+        $this->type = self::TYPE_PASSWORD;
+        return $this;
+    }
+
     public function __toString()
     {
         return sprintf(
@@ -38,11 +44,5 @@ class Field
             $this->model->hasError($this->attribute) ? 'is-invalid' : '',
             $this->model->getFirstError($this->attribute)
         );
-    }
-
-    public function passwordField()
-    {
-        $this->type = self::TYPE_PASSWORD;
-        return $this;
     }
 }
