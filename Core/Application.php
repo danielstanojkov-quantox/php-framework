@@ -9,6 +9,7 @@ class Application
     public Router $router;
     public Request $request;
     public Response $response;
+    public Session $session;
     public Controller $controller;
     public Database $db;
 
@@ -26,6 +27,7 @@ class Application
         $this->response = new Response;
         $this->router = new Router($this->request, $this->response);
         $this->db = new Database($config['db']);
+        $this->session = new Session;
     }
 
     public function run()

@@ -51,6 +51,11 @@ class Database
         $this->saveMigrations($newMigrations);
     }
 
+    public function prepare($sql)
+    {
+        return $this->pdo->prepare($sql);
+    }
+
     public function createMigrationsTable()
     {
         $statement = "CREATE TABLE IF NOT EXISTS migrations(
