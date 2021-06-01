@@ -1,3 +1,8 @@
+<?php
+
+/**@var \App\Models\User $model */
+?>
+
 <h1>Register</h1>
 
 <?php $form = App\Core\Form\Form::begin(['action' => '', 'method' => 'POST']); ?>
